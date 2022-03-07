@@ -1,0 +1,22 @@
+type Lesson {
+  name: String!
+  instructorId: String!
+  price: Float!
+}
+
+type Instructor {
+  id: ID!
+  name: String!
+  transmission: String!
+  vehicle: String!
+  lessons: [Lesson]!
+  revenue: Float!
+}
+
+input InstructorsInput {
+  limit: Int
+}
+
+type Query {
+  instructors(input: InstructorsInput!): [Instructor]!
+}
