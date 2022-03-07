@@ -1,4 +1,4 @@
-# The AA Driving School coding challenge
+# The AA Driving School coding challenge for testers!
 
 This repository contains two sub folders:
 
@@ -6,16 +6,16 @@ This repository contains two sub folders:
 
 Contains a basic Apollo server implementation intended to serve instructor data.
 
-1. Modify `api/src/resolvers/instructor.ts` so `getInstructors` returns an instructors lessons and revenue
+1. `cd` into `api` directory.
+2. `yarn install` to install dependencies.
+3. `yarn start` to run the server.
 
 ## /ui
 
-Contains a simple React app featuring a data table populated with instructor data and a modal with a 🚀.
+Contains a simple React app featuring a data table populated with instructor data and a modal containing lesson details. The table also features a limit feature to control the number of instructor results returned.
 
-1. Convert the main `App` component from a class based component into a functional component
-2. Render the missing `Revenue` value in the table
-
-## General
-
-1. Ensure your work is covered by unit tests where appropriate.
-2. The repo is littered with bad code smells. Please fix any you find and tell us how bad our code is when we discuss your solution!
+1. `cd` into `ui` directory.
+2. `yarn install` to install dependencies.
+3. `yarn start` to run the app.
+4. Write e2e tests in `cypress/integration`
+5. Run e2e tests with `yarn run cypress open`.
