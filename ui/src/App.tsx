@@ -27,7 +27,7 @@ const INSTRUCTORS_QUERY = gql`
 const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [instructor, setInstructor] = useState<Instructor>();
-  const [limit, setLimit] = useState(-1);
+  const [limit, setLimit] = useState(15);
 
   const openModal = (instructor: Instructor) => {
     setInstructor(instructor);
