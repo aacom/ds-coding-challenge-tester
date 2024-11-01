@@ -17,5 +17,5 @@ Contains a simple React app featuring a data table populated with instructor dat
 1. `cd` into `ui` directory.
 2. `yarn install` to install dependencies.
 3. `yarn start` to run the app.
-4. Write e2e tests in `cypress/integration`
-5. Run e2e tests with `yarn run cypress open`.
+4. Write e2e tests in `cypress/features`
+5. Run e2e tests with `yarn cypress:open`.
